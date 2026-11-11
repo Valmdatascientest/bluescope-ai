@@ -2,7 +2,6 @@ package com.bluescope.ai.presentation.scanner
 
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
-import android.net.Uri
 import android.provider.Settings
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -47,6 +46,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.bluescope.ai.bluetooth.permission.BluetoothPermissionPolicy
@@ -124,7 +124,7 @@ fun ScannerScreen(
                                 context.startActivity(
                                     Intent(
                                         Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                                        Uri.parse("package:${context.packageName}"),
+                                        "package:${context.packageName}".toUri(),
                                     ),
                                 )
                             }) { Text("Ouvrir les réglages de l’application") }
