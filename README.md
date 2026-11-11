@@ -18,6 +18,20 @@ Le projet cible notamment le Samsung Galaxy Z Flip 7 et reste adaptatif aux autr
 
 Les validations radio réelles restent explicitement à exécuter sur matériel ; voir [le rapport de tests](docs/TEST_REPORT.md).
 
+## Aperçu sur Galaxy Z Flip 7
+
+Captures réalisées sur le Samsung Galaxy Z Flip 7 pendant la validation terrain. Les adresses Bluetooth sont masquées par l’application ; les appareils visibles correspondent à l’environnement radio de test.
+
+<p align="center">
+  <img src="docs/screenshots/home-z-flip-7.png" alt="Écran d'accueil de BlueScope AI avec la synthèse de l'environnement Bluetooth" width="180" />
+  <img src="docs/screenshots/scanner-z-flip-7.png" alt="Scan BLE en cours avec les périphériques détectés" width="180" />
+  <img src="docs/screenshots/library-z-flip-7.png" alt="Bibliothèque locale des périphériques observés" width="180" />
+  <img src="docs/screenshots/analysis-z-flip-7.png" alt="Analyse locale d'un périphérique avec preuves techniques" width="180" />
+  <img src="docs/screenshots/settings-z-flip-7.png" alt="Réglages de confidentialité et du scanner" width="180" />
+</p>
+
+<p align="center"><em>Accueil · Scan borné · Bibliothèque hors ligne · Analyse fondée sur des preuves · Réglages locaux</em></p>
+
 ## Construire
 
 Pré-requis : Android Studio 2026.1 ou supérieur, Android SDK 37, Build Tools 36.0.0 et JDK 17+. Le wrapper utilise Gradle 9.6.0 et AGP 9.5.1.
